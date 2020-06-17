@@ -1,0 +1,1 @@
+Sometimes, it is quite difficult to find about a place that you want to dearly visit. You seek information to build up a perfect itinerary, discuss about places, read about travellers experience, etc. Well, the aim of this forum is to help people regarding- where to travel- and how to travel that will eventually make their trip planning- a hassle free experience.
