@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 module.exports = {
   mode: "development",
   devtool: "inline-source-map",
-  entry: ["./client/index.js"],
+  entry: ["webpack-hot-middleware/client", "./client/index.js"],
   module: {
     rules: [
       {
