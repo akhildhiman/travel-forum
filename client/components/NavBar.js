@@ -22,6 +22,9 @@ const NavBar = () => {
     },
     color: {
       background: "rgb(66, 138, 245)"
+    },
+    margin: {
+      marginLeft: "5px"
     }
   }))
   const classes = useStyles()
@@ -41,7 +44,9 @@ const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           Travel Forum
         </Typography>
-        <Button variant="contained" color="secondary">Login with Google</Button>
+        <div className={classes.margin}>
+          <Button variant="contained" color="secondary">Login with Google</Button>
+        </div>
       </Toolbar>
     </AppBar>
     </Container>

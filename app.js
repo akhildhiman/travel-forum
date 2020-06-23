@@ -10,7 +10,8 @@ const mongoose = require("mongoose")
 
 const indexRouter = require("./routes/index")
 const userRouter = require("./routes/users")
-// const authRouter = require("./routes/auth")
+const authRouter = require("./routes/auth")
+const passportSetup = require("./config/passport-setup")
 
 const app = express()
 
@@ -53,6 +54,7 @@ mongoose.connect(
 )
 
 app.use("/api/v1/users", userRouter)
+app.use("/api/v1/auth", authRouter)
 app.use("/*", indexRouter)
 
 // catch 404 and forward to error handler
