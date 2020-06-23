@@ -10,6 +10,7 @@ const mongoose = require("mongoose")
 
 const indexRouter = require("./routes/index")
 const userRouter = require("./routes/users")
+// const authRouter = require("./routes/auth")
 
 const app = express()
 
