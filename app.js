@@ -41,14 +41,27 @@ if (process.env.NODE_ENV === "development") {
   app.use(require("webpack-hot-middleware")(compiler))
 }
 
+// mongoose.connect(
+//   "mongodb://localhost:27017/travel-forum",
+//   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false },
+//   function (err) {
+//     if (err) {
+//       console.log("Not connected to the database")
+//     } else {
+//       console.log("Connected to the database")
+//     }
+//   }
+// )
+
+// mongodb atlas connection
 mongoose.connect(
-  "mongodb://localhost:27017/travel-forum",
+  process.env.MONGO_DB_URL,
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false },
   function (err) {
     if (err) {
       console.log("Not connected to the database")
     } else {
-      console.log("Connected to the database")
+      console.log("connected to the database")
     }
   }
 )

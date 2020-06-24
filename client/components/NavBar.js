@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { makeStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
@@ -23,8 +24,8 @@ const NavBar = () => {
     color: {
       background: "rgb(66, 138, 245)"
     },
-    margin: {
-      marginLeft: "5px"
+    textDecorationLink: {
+      textDecoration: "none"
     }
   }))
   const classes = useStyles()
@@ -44,9 +45,9 @@ const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           Travel Forum
         </Typography>
-        <div className={classes.margin}>
-          <Button variant="contained" color="secondary">Login with Google</Button>
-        </div>
+          <Link to="/auth/google" className={classes.textDecorationLink}>
+            <Button variant="contained" color="secondary">Login with Google</Button>
+          </Link>
       </Toolbar>
     </AppBar>
     </Container>
